@@ -1,2 +1,0 @@
-# Clinica-Veterinaria
-Proyecto 
