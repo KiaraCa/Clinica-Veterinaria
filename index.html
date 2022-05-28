@@ -1,182 +1,937 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <title>Hospital Veterinario Esucomex</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    
-    <!--Google Fonts-->
-    <link href='http://fonts.googleapis.com/css?family=Duru+Sans|Actor' rel='stylesheet' type='text/css'>
-    
-    <!--Bootshape-->
-    <link href="css/bootshape.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  </head>
-  
-  <body>
-    <!-- Navigation bar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><span class="green">Hospital</span> Vet</a>
+  <title>Clinica Veterinaria</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= barra superior ======= -->
+  <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+      <i class="bi bi-phone d-flex align-items-center"><span>+56 967487298</span></i>
+      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Lunes-Domingo: 09:00 AM - 23:00 PM</span></i>
+    </div>
+  </section>
+
+  <!-- ======= Barra de Navegacion ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto">
+        <h1><a href="index.html">Clinica Vet</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Valores</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+          <li><a class="nav-link scrollto" href="#specials">Servicios</a></li>
+          <li><a class="nav-link scrollto" href="#events">Toma de Horas</a></li>
+          <li><a class="nav-link scrollto" href="#chefs">Quienes Somos</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Peluqueria Canina</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contactanos</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+      <a href="http://localhost/Clinica%20Vet/Clinica%20vet/miportal.php" class="book-a-table-btn scrollto">Mi Portal</a>
+
+    </div>
+  </header><!-- termino barra de navegación -->
+
+  <!-- ======= Carrusel ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Imagen1 -->
+          <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Clinica</span> Vet</h2>
+                <p class="animate__animated animate__fadeInUp">Somos un equipo humano multidisciplinario de profesionales y técnicos que amamos a nuestros pequeños peludos y, por ende, nos preocupamos de cada uno como si fuera propio entregando un servicio integral con la más alta tecnología.</p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Farmacia</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Toma de Hora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Imagen 2 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Peluqueria Canina</h2>
+                <p class="animate__animated animate__fadeInUp">Por que sabemos lo importante que es la estética y el cuidado personal de sus mascotas, en nuestra instalación encontrará un ambiente seguro y confiable para realizar los servicios de peluquería y bañado de su mascota.</p>
+                <div>
+                  <a href="#gallery" class="btn-menu animate__animated animate__fadeInUp scrollto">Galeria</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Toma de Hora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- imagen 3 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Etologia</h2>
+                <p class="animate__animated animate__fadeInUp">Las patologías del comportamiento en las mascotas se están transformando en uno de los principales factores de preocupación para el tutor y detrimento de la salud para animal que la padece. </p>
+                <div>
+                  <a href="#specials" class="btn-menu animate__animated animate__fadeInUp scrollto">Servicios</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Toma de Hora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <nav role="navigation" class="collapse navbar-collapse navbar-right">
-          <ul class="navbar-nav nav">
-            <li class="active"><a href="#">Conocenos</a></li>
-            <li class="dropdown">
-              <a data-toggle="dropdown" href="#" class="dropdown-toggle">PetShop <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Accesorios para perros</a></li>
-                <li class="active"><a href="#">Accesorios para gatos</a></li>
-                <li><a href="accesorios exoticos.html">Accesorios animales exoticos</a></li>
-                <li class="divider"></li>
-                <li><a href="Farmacia.html">Farmacia</a></li>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- Termino Carrusel -->
+
+  <main id="main">
+
+    <!-- ======= Valores Clinica vet ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content">
+              <h3>Conoce los valores <strong>de Clinica Vet</strong></h3>
+              <p>
+                MISIÓN: Proporcionar atención médica veterinaria especializada que garantice la salud de mascotas exóticas, perros y gatos, contando con el equipamiento e infraestructura modernos necesarios para el manejo integral del cuidado de las mascotas. Promovemos la atención preventiva, educando e informando a nuestros clientes sobre la salud y bienestar de sus mascotas, orientado a reforzar la importancia de la tenencia responsable, por esta razón, una parte importante de nuestro trabajo consta de ayudar a distintas fundaciones sin fines de lucro de animales exóticos.
+              </p>
+              <p class="fst-italic">
+                VISIÓN: Ser un centro de referencia de animales exóticos, perros y gatos, mediante una atención profesional y cercana. Anhelamos además tener un mayor alcance con distintas entidades sin fines de lucro y poder ayudar a la comunidad en nuestro rol como médicos veterinarios.
+              </p>
+              <ul>
+                <li><i class="bx bx-check-double"></i> Profesionalismo de todo nuestro equipo: Buscando siempre hacer nuestro mejor trabajo y perfeccionándonos contantemente en beneficio de nuestros pacientes.</li>
+                <li><i class="bx bx-check-double"></i> Amor, Empatía y Respeto: Por nuestros pacientes y sus dueños.</li>
+                <li><i class="bx bx-check-double"></i> Disposición: Para educar a nuestros clientes y ayudar a los animales que necesitan de nuestra ayuda.</li>
               </ul>
-            </li>
-            <li><a href="#">Consulta veterinaria</a></li>
-            <li><a href="Pestaña peluqueria.html">Peluqueria</a></li>
-            <li><a href="#">Etologia</a></li>
-            <li><a href="contacto.html">Contactanos</a></li>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- Termino de presentacion de valores de la clinica -->
+
+    <!-- ======= Tarjetas de servicios clinica ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Servicios <span>Principales</span></h2>
+          <p>Conoce nuestros servicios de clinica y hospital</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box">
+              <span>01</span>
+              <h4>ANIMALES EXÓTICOS</h4>
+              <p>Atención médica especializada para mascotas exóticas todos los días, urgencias, exámenes y hospital especializado.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>02</span>
+              <h4>PERROS Y GATOS</h4>
+              <p>Atención médica profesional, clínica equipada para dar el mejor servicio en consultas, urgencias y hospital de animales menores.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>03</span>
+              <h4> Urgencias y Hospital</h4>
+              <p>Atención de urgencia diurna con hospital 24 horas para perros, gatos y animales exóticos Pincha aquí para comunicarte con nosotros</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- Tarjetas de servicios clinica -->
+
+    <!-- ======= Farmacia ======= -->
+    <section id="menu" class="menu">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Far<span>macia</span></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".filter-starters">Comprimidos</li>
+              <li data-filter=".filter-salads">Garrapatas</li>
+              <li data-filter=".filter-specialty">En Polvo</li>
             </ul>
-            <a href="login.html" class="btn btn-success btn-lg" tabindex="-1" role="button" >Login</a>
-        </nav>
+          </div>
+        </div>
+
+        <div class="row menu-container">
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#">Condrovet</a><span>$21.800</span>
+            </div>
+            <div class="menu-ingredients">
+              Comprimido Oral / DRAGPHARMA
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <div class="menu-content">
+              <a href="#">Mixantip plus</a><span>$9.000</span>
+            </div>
+            <div class="menu-ingredients">
+              15 grs y 50 grs / DRAGPHARMA
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#">Meloxivet</a><span>$14.900</span>
+            </div>
+            <div class="menu-ingredients">
+              60 ml / DRAGPHARMA
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#">Calvipet</a><span>$6.900</span>
+            </div>
+            <div class="menu-ingredients">
+              Polvo oral 100grs / DRAGPHARMA
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <div class="menu-content">
+              <a href="#">Sucravet</a><span>$16.500</span>
+            </div>
+            <div class="menu-ingredients">
+              10% 100ml / CHEMIE
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#">Dynamide</a><span>$18.900</span>
+            </div>
+            <div class="menu-ingredients">
+              30 comprimidos / BROUWER
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#">Simparica 3</a><span>$15.900</span>
+            </div>
+            <div class="menu-ingredients">
+              3 comprimidos / ZOETIS
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#">Synulox</a><span>$12.100</span>
+            </div>
+            <div class="menu-ingredients">
+              Amoxicilina / ZOETIS
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <div class="menu-content">
+              <a href="#">Power Ultra</a><span>$5.900</span>
+            </div>
+            <div class="menu-ingredients">
+              Pipeta / BROUWER
+            </div>
+          </div>
+
+        </div>
+
       </div>
-    </div>
+    </section><!-- Termino de farmacia -->
 
-    <!--Carousel-->
+    <!-- ======= Resumen de servicios ======= -->
+    <section id="specials" class="specials">
+      <div class="container">
 
-    <div class="jumbotron">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicadores -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="img/banner portada.png" alt="">
-            <div class="carousel-caption">
-            </div>
+        <div class="section-title">
+          <h2>Conoce Nuestros <span>Servicios</span></h2>
+          <p>Todo lo que tu mascota necesita lo encuentras en Clinica Vet</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Consulta Medica</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Urgencias 24Hrs.</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Peluqueria Canina</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Etologia</a>
+              </li>
+            </ul>
           </div>
-          <div class="item">
-            <img src="img/bannerpeluqeria.png" alt="">
-            <div class="carousel-caption">
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/bannerportada2.png" alt="">
-            <div class="carousel-caption">
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Consulta Veterinaria</h3>
+                    <p class="fst-italic">Atención médica profesional, clínica equipada para dar el mejor servicio en consultas, urgencias y hospital de animales menores.</p>
+                    <p>De Lunes a Domingo festivos incluidos de 08:30 AM a 19:30 PM.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Consulta1.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Urgencias 24HRS</h3>
+                    <p class="fst-italic">Atención de urgencia diurna con hospital 24 horas para perros, gatos y animales exóticos Pincha aquí para comunicarte con nosotros</p>
+                    <p>24 HRS sin toma de hora</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Urgencia1.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Peluquería Canina</h3>
+                    <p class="fst-italic">✔Corte de Pelo Perro ✔Emparejamiento de cara  ✔Corte Sanitario ✔Baño Completo para Perro</p>
+                    <p>✔Corte de Uñas para Perro ✔Vaciado de Glándulas Anales ✔Limpieza de Oídos ✔Perfume</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Peluqueria1.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Etologia</h3>
+                    <p class="fst-italic">La educación en positivo es aquella que prioriza la utilización del refuerzo positivo y el respeto del bienestar del animal. Además, promueve el ejercicio mental y la relación saludable con tu compañero canino o felino, intentando que éste haga las cosas porque le gustan y no por obligación, creando un vínculo sincero de amistad y familia, no de sometimiento.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Etologia1.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-5.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+
       </div>
-    </div>
+    </section><!-- Resumen de servicios -->
    
-        <!-- Columnas para toma de horas -->
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container">
 
-    <h3 class="text-center">TOMA DE HORA ONLINE</h3>
+       
 
-    <div class="container thumbs">
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="img/consultavet.jpg" alt="" class="img-circle">
-          <div class="caption">
-            <br>
-            <h3 class="text-center">CONSULTA VETERINARIA</h3>
-            <p>Nuestro equipo está preparado y en actualización constante para poder realizar distintos tipos de atención médica destinados a prevenir, recuperar y mantener a tu mascota saludable y feliz.
-              <li>Lunes a Viernes: 09:00 a 18:30 hrs</li>
-              <li>Sábado y domingo: 09:00 a 16:30 hrs</li>
-              <li>Urgencias 24 Hrs</li>
-              <br>
-            </p>
-            <div class="btn-toolbar text-center">
-              <a href="formulario consulta.html" role="button" class="btn btn-success">TOMA TU HORA</a>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Toma de Hora Consulta ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Toma de Hora <span>Consulta</span></h2>
+          <p>Hora puedes agendar tu hora como mas te acomode en todos nuestros servicios</p>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Nombre Mascota" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input class="form-control" type="datetime-local" name="fecha"required>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <select class="form-control">
+                <option>Especialista</option>
+                <option>Sofía Villalobos</option>
+                <option>Constanza Vera</option>
+                <option>Daniel Lizana</option>
+            </select>
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="people" id="people" placeholder="Nombre Dueño" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
             </div>
           </div>
-        </div>
-      </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Motivo de consulta"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Enviar</button></div>
+        </form>
 
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="img/peluqueria2.jpg" alt="" class="img-circle">
-          <div class="caption">
-            <br>
-            <h3 class="text-center">PELUQUERIA</h3>
-            <p>Somos un establecimiento con una trayectoria de 10 años de experiencia en peluquería canina. Nos preocupamos de atender con mucho cariño y cuidados especiales a tu mascota. 
-              <li>Baño sanitario</li>
-              <li>Limpieza de glandulas anales</li>
-              <li>Limpieza de oidos</li>
-              <li>Corte de pelo</li>
-              <li>Corte de uñas</li>
-            </p>
-            <div class="btn-toolbar text-center">
-              <a href="formulario peluqueria.html" role="button" class="btn btn-success">TOMA TU HORA</a>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="img/etologia.jpg" alt="" class="img-circle">
-          <div class="caption">
-            <h3 class="text-center">ETOLOGIA</h3>
-            <p>Conseguir el bienestar en un perro, manejarlo en situaciones complicadas y sugerir mecanismos de enriquecimiento ambiental, estos son los resultados de la disciplina. Un etólogo es un especialista clave en los procesos de reintroducción de animales, es decir, se encarga de adaptar a los animales a su nuevo entorno. Por ello, es importante prestarle atención a una serie de factores esenciales</p>
-            <br>
-            <div class="btn-toolbar text-center">
-              <a href="formulario Etologia.html" role="button" class="btn btn-success">TOMA TU HORA</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    </section><!-- Termino de Formulario Consulta -->
+
+
+<!-- ======= Toma de Hora Peluqueria ======= -->
+<section id="book-a-table" class="book-a-table">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Toma de Hora <span>Peluqueria</span></h2>
+      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
     </div>
 
-    <h3 class="text-center">Contacto <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/> </h3> 
-    </svg>
-    <br>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13305.647013415388!2d-70.7796518921875!3d-33.51667869999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dcd7c216646f%3A0xdafec546dad1ec36!2sHospital%20veterinario%20HEVM%20MOTA%20MASCOTA%20veterinaria%20animales%20exoticos!5e0!3m2!1ses!2scl!4v1650094626815!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Nombre Mascota" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email">
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+          <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+            <input class="form-control" type="datetime-local" name="fecha"required>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <select class="form-control">
+            <option>Tamaño</option>
+            <option>Pequeño</option>
+            <option>Mediano</option>
+            <option>Grande</option>
+        </select>
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="text" class="form-control" name="people" id="people" placeholder="Nombre Dueño" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+          <div class="validate"></div>
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="message" rows="5" placeholder="Cuentanos tu solicitud"></textarea>
+        <div class="validate"></div>
+      </div>
+      <div class="mb-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+      </div>
+      <div class="text-center"><button type="submit">Enviar</button></div>
+    </form>
 
-  
-    <!-- Footer -->
-    <div class="footer text-center">
-        <p>Redes Sociales  <a class="green" href="http://bootshape.com">Hospitalveterinarioesucomex.cl</a></p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-          <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-        </svg>
+  </div>
+</section><!--Termino de Formulario Peluqueria -->
+
+
+<!-- ======= Toma de Hora Etologia ======= -->
+<section id="book-a-table" class="book-a-table">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Toma de Hora <span>Etologia</span></h2>
+      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
     </div>
 
-  
-    <!-- // <script src="https://code.jquery.com/jquery.js"></script> -->
-    <script src="js/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootshape.js"></script>
-  </body>
+    <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Nombre Mascota" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email">
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+          <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+            <input class="form-control" type="datetime-local" name="fecha"required>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <select class="form-control">
+            <option>Mascota</option>
+            <option>Perro</option>
+            <option>Gato</option>
+        </select>
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="text" class="form-control" name="people" id="people" placeholder="Nombre Dueño" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+          <div class="validate"></div>
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="message" rows="5" placeholder="Cuentanos tu solicitud"></textarea>
+        <div class="validate"></div>
+      </div>
+      <div class="mb-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+      </div>
+      <div class="text-center"><button type="submit">Enviar</button></div>
+    </form>
+
+  </div>
+</section><!--Termino de Formulario Etologia -->
+
+
+    <!-- ======= Galeria de Peluqueria ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+
+        <div class="section-title">
+          <h2>Galeria <span>Peluqueria</span></h2>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/corte1.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/corte1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/corte2.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/corte2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/corte3.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/corte3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/corte4.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/corte4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/bobtail2.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/bobtail2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- Termino de Galeria -->
+
+    <!-- ======= Quienes Somos ======= -->
+    <section id="chefs" class="chefs">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Nuestro <span>Personal</span></h2>
+          <p>En clinica vet sabemos que la salud y bienestar de nuestros pacientes depende de la calidad de nuestro equipo médico veterinario. Es por esto, que día a día trabajamos para contar con el mejor equipo para entregar un servicio de calidad y profesional.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/chefs/doc1.jpeg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Constanza Vera</h4>
+                <span>Medico Veterinario. Diplomado en Cirugía y cuidados intensivos de animales menores</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/chefs/doc2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Gabriel Miranda </h4>
+                <span>Medico Veterinario. Area de desarrollo mamíferos exóticos.Docente UNAB. Director AMVAE.</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/chefs/doc3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>María Ignacia Najle</h4>
+                <span>Medico Veterinario. Diplomado en Medicina y manejo de animales exóticos. Imagenología de animales.</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- Termino de quienes somos -->
+
+    <!-- ======= Testimonios clientes ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container position-relative">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Claudio Rodriguez</h3>
+                <h4>Dueño Motita</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Me encanta como tratan a los animales. Hay mucho cariño. Ya llevé a mis dos gatos hace años. Ahora tengo de nuevo a otros dos y aunque vivo más lejos, he decidido traerlos a esta clínica. Vale la pena. Me siento segura y además son muy justas en el precio!!!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- testimonio 1 -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Martinez</h3>
+                <h4>Dueña Puntito</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Muy buena, son buenas veterinarias, cariñosas con los animales y con nosotros. A mi perro le curaron la enfermedad del mosquito y duro 18 años con problemas de riñón y demás. Muy buenas.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- Testimonio 2 -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jenny Rojas</h3>
+                <h4>Dueña Kiara</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Me siento muy segura de dejar la salud de mi hija canina en las manos de los médicos de esta clínica, son súper amables y siempre la han atendido con mucho amor y dedicación.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- Testimonio 3 -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Carlos Acevedo</h3>
+                <h4>Dueño Canela</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Muy buenos profesionales, se nota que tienen mucha experiencia, y de precio genial. El trato que tienen con los animales es perfecto, les tratan con mucho cariño y cuidado. Lo recomiendo 100%!!!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- Testimonio 4 -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Dueño Gon</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Genial el trato con personas y animales. Han ganado unos clientes nuevos.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- Testimonio 5 -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- Final Testimonios -->
+
+    <!-- ======= CONTACTO ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2><span>Contacta</span>nos</h2>
+          <p>Nos ubicamos a minutos de la estación de metro Plaza de Maipú de la Linea 5. A menos de 2 minutos caminando de los paraderos PI473 y PI699 del sistema de transporte público.</p>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13305.647013415388!2d-70.7796518921875!3d-33.51667869999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dcd7c216646f%3A0xdafec546dad1ec36!2sHospital%20veterinario%20HEVM%20MOTA%20MASCOTA%20veterinaria%20animales%20exoticos!5e0!3m2!1ses!2scl!4v1650094626815!5m2!1ses!2scl" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container mt-5">
+
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Dirección:</h4>
+              <p>El Carmen 1295<br>Santiago, Maipú 535022</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-clock"></i>
+              <h4>Horario:</h4>
+              <p>Lunes-Domingo:<br>10:00 AM - 23:00 PM   Urgencias 24Hrs</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-envelope"></i>
+              <h4>Correo:</h4>
+              <p>Clinicavet@gmail.com<br>consultas@clinicavet.com</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-phone"></i>
+              <h4>Telefono:</h4>
+              <p>+56 978643254<br>+22 78365845</p>
+            </div>
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Correo" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Enviar</button></div>
+        </form>
+
+      </div>
+    </section><!-- Final de Contactanos -->
+
+  </main>
+
+  <!-- ======= Bajada de pagina ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Clinica Vet</h3>
+      <p>Ofrecemos diversos servicios de alta calidad y profesionalismo, con especialistas para cada área de animales domésticos comunes y exóticos</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>ClinicaVet</span></strong>. Todos los derechos reservados
+      </div>
+      <div class="credits">
+      
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- Termino bajada de pagina -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
